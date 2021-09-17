@@ -10,7 +10,7 @@ function quickSort(array, left, right) {
         partitionIndex = partition(array, pivot, left, right);
 
         // sort left and right
-        quickSort(array, left, partition - 1);
+        quickSort(array, left, partitionIndex - 1);
         quickSort(array, partitionIndex + 1, right);
     }
     return array;
